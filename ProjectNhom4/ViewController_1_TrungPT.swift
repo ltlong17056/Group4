@@ -22,7 +22,7 @@ class ViewController_1_TrungPT: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+     
 
     /*
     // MARK: - Navigation
@@ -32,6 +32,6 @@ class ViewController_1_TrungPT: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */  
+    */
 
 }
