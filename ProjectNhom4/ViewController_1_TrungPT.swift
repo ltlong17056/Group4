@@ -11,7 +11,7 @@
 import UIKit
 
 class ViewController_1_TrungPT: UIViewController {
-
+//hihi
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +22,7 @@ class ViewController_1_TrungPT: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-     
+    
 
     /*
     // MARK: - Navigation
