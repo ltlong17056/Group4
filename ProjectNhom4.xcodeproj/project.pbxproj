@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A812D7E1ED82CFD001017B8 /* h1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A812D7D1ED82CFD001017B8 /* h1.png */; };
 		8AA4B0D11ED827B200ABB186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4B0D01ED827B200ABB186 /* AppDelegate.swift */; };
 		8AA4B0D61ED827B200ABB186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA4B0D41ED827B200ABB186 /* Main.storyboard */; };
 		8AA4B0D81ED827B200ABB186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AA4B0D71ED827B200ABB186 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A812D7D1ED82CFD001017B8 /* h1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = h1.png; path = ../../h1.png; sourceTree = "<group>"; };
 		8AA4B0CD1ED827B200ABB186 /* ProjectNhom4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectNhom4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA4B0D01ED827B200ABB186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA4B0D51ED827B200ABB186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +90,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A812D7C1ED82CDA001017B8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		8AA4B0C41ED827B200ABB186 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +120,8 @@
 		8AA4B0CF1ED827B200ABB186 /* ProjectNhom4 */ = {
 			isa = PBXGroup;
 			children = (
+				8A812D7D1ED82CFD001017B8 /* h1.png */,
+				8A812D7C1ED82CDA001017B8 /* images */,
 				8AA4B0D01ED827B200ABB186 /* AppDelegate.swift */,
 				8AA4B0FE1ED828F500ABB186 /* ViewController_1_TrungPT.swift */,
 				8AA4B1001ED8290500ABB186 /* ViewController_2_SinhTT.swift */,
@@ -252,6 +263,7 @@
 			files = (
 				8AA4B0DB1ED827B200ABB186 /* LaunchScreen.storyboard in Resources */,
 				8AA4B0D81ED827B200ABB186 /* Assets.xcassets in Resources */,
+				8A812D7E1ED82CFD001017B8 /* h1.png in Resources */,
 				8AA4B0D61ED827B200ABB186 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +524,7 @@
 				8AA4B0F71ED827B200ABB186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AA4B0F81ED827B200ABB186 /* Build configuration list for PBXNativeTarget "ProjectNhom4Tests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +533,7 @@
 				8AA4B0FA1ED827B200ABB186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AA4B0FB1ED827B200ABB186 /* Build configuration list for PBXNativeTarget "ProjectNhom4UITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +542,7 @@
 				8AA4B0FD1ED827B200ABB186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
