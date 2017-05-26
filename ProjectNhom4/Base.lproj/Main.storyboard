@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller1 TrungPT-->
@@ -69,12 +70,81 @@
                     <view key="view" contentMode="scaleToFill" id="FAy-Lu-odn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-7i-BwR" userLabel="excludeView">
+                                <rect key="frame" x="100" y="22" width="400" height="576"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="momo_icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z4C-dQ-OJz">
+                                        <rect key="frame" x="170" y="10" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="D7B-EG-2j5"/>
+                                            <constraint firstAttribute="height" constant="60" id="rz1-Da-aFT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhap mat khau" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-WX-Rx1" userLabel="edt_pass_1">
+                                        <rect key="frame" x="80" y="144" width="240" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="tp3-Zo-Cv8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thiet lap mat khau de bao ve tai khoan vi momo cua ban" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hC-eM-M0Z" userLabel="lbl_1">
+                                        <rect key="frame" x="40" y="90" width="320" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhap lai mat khau" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmz-EM-eZU" userLabel="edt_pass_2">
+                                        <rect key="frame" x="80" y="194" width="240" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cv-hc-hwh">
+                                        <rect key="frame" x="114" y="244" width="172" height="30"/>
+                                        <color key="backgroundColor" red="0.63677069481382986" green="0.098753610486853424" blue="0.54010857190968542" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Q7P-dH-ATb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="XAC NHAN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="lwG-WX-Rx1" firstAttribute="top" secondItem="5hC-eM-M0Z" secondAttribute="bottom" constant="20" id="0DJ-0d-Hss"/>
+                                    <constraint firstAttribute="trailing" secondItem="5hC-eM-M0Z" secondAttribute="trailing" constant="40" id="1HO-fh-Fgd"/>
+                                    <constraint firstItem="5hC-eM-M0Z" firstAttribute="top" secondItem="z4C-dQ-OJz" secondAttribute="bottom" constant="20" id="2wx-7e-hBt"/>
+                                    <constraint firstItem="jmz-EM-eZU" firstAttribute="height" secondItem="lwG-WX-Rx1" secondAttribute="height" id="9ij-Zc-r10"/>
+                                    <constraint firstItem="lwG-WX-Rx1" firstAttribute="centerX" secondItem="8vN-7i-BwR" secondAttribute="centerX" id="9iz-9H-T6z"/>
+                                    <constraint firstItem="jmz-EM-eZU" firstAttribute="centerX" secondItem="8vN-7i-BwR" secondAttribute="centerX" id="JUO-7a-CBl"/>
+                                    <constraint firstItem="5hC-eM-M0Z" firstAttribute="leading" secondItem="8vN-7i-BwR" secondAttribute="leading" constant="40" id="OIc-oE-wEu"/>
+                                    <constraint firstItem="jmz-EM-eZU" firstAttribute="top" secondItem="lwG-WX-Rx1" secondAttribute="bottom" constant="10" id="Syf-yj-oZv"/>
+                                    <constraint firstItem="5hC-eM-M0Z" firstAttribute="centerX" secondItem="8vN-7i-BwR" secondAttribute="centerX" id="VB8-ah-mD4"/>
+                                    <constraint firstItem="z4C-dQ-OJz" firstAttribute="top" secondItem="8vN-7i-BwR" secondAttribute="top" constant="10" id="XKd-Y0-2Nj"/>
+                                    <constraint firstItem="jmz-EM-eZU" firstAttribute="width" secondItem="lwG-WX-Rx1" secondAttribute="width" id="ev4-zt-mom"/>
+                                    <constraint firstItem="z4C-dQ-OJz" firstAttribute="centerX" secondItem="8vN-7i-BwR" secondAttribute="centerX" id="h4k-lT-5ZU"/>
+                                    <constraint firstItem="8Cv-hc-hwh" firstAttribute="width" secondItem="8vN-7i-BwR" secondAttribute="width" multiplier="3/7" id="nJ8-wI-HgP"/>
+                                    <constraint firstItem="lwG-WX-Rx1" firstAttribute="width" secondItem="8vN-7i-BwR" secondAttribute="width" multiplier="3/5" id="wJg-f8-Y7L"/>
+                                    <constraint firstItem="8Cv-hc-hwh" firstAttribute="top" secondItem="jmz-EM-eZU" secondAttribute="bottom" constant="10" id="web-s2-eZp"/>
+                                    <constraint firstItem="8Cv-hc-hwh" firstAttribute="centerX" secondItem="8vN-7i-BwR" secondAttribute="centerX" id="yjN-dV-ezX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78481341419999995" green="0.1917478524" blue="0.672052392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8vN-7i-BwR" firstAttribute="centerX" secondItem="FAy-Lu-odn" secondAttribute="centerX" id="6qo-Fo-LjK"/>
+                            <constraint firstItem="8vN-7i-BwR" firstAttribute="top" secondItem="KMr-cm-jRl" secondAttribute="bottom" constant="2" id="GSp-M3-nY3"/>
+                            <constraint firstItem="kZt-aS-84y" firstAttribute="top" secondItem="8vN-7i-BwR" secondAttribute="bottom" constant="2" id="hhM-wO-Oa3"/>
+                            <constraint firstItem="8vN-7i-BwR" firstAttribute="width" secondItem="FAy-Lu-odn" secondAttribute="width" multiplier="2/3" id="pko-KH-BOA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d53-hx-Vx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1165" y="1214"/>
+            <point key="canvasLocation" x="1135" y="1106"/>
         </scene>
         <!--View Controller5 TrungPT-->
         <scene sceneID="zHc-kp-crA">
@@ -149,4 +219,7 @@
             <point key="canvasLocation" x="1174" y="1840"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="momo_icon.jpg" width="512" height="512"/>
+    </resources>
 </document>
