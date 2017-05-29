@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -52,12 +53,90 @@
                     <view key="view" contentMode="scaleToFill" id="agp-b1-XGV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo momo 2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-YQ-ic9">
+                                <rect key="frame" x="180" y="38" width="240" height="141"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thiet lap mat khau de bao ve tai khoan MoMo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDN-a9-aN7">
+                                <rect key="frame" x="20" y="214" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ow3-Ox-TpQ" customClass="CustomTextField" customModule="ProjectNhom4" customModuleProvider="target">
+                                <rect key="frame" x="180" y="243" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sd-a5-Ryj" customClass="CustomTextField" customModule="ProjectNhom4" customModuleProvider="target">
+                                <rect key="frame" x="180" y="281" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpV-3t-Gpc" customClass="CustomButton" customModule="ProjectNhom4" customModuleProvider="target">
+                                <rect key="frame" x="180" y="319" width="240" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Xac nhan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62352941176470589" green="0.0039215686274509803" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ow3-Ox-TpQ" secondAttribute="trailing" constant="180" id="7Af-qg-yYh"/>
+                            <constraint firstItem="2sd-a5-Ryj" firstAttribute="top" secondItem="Ow3-Ox-TpQ" secondAttribute="bottom" constant="8" id="EA7-BO-xFV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2sd-a5-Ryj" secondAttribute="trailing" constant="160" id="EZT-1B-fe1"/>
+                            <constraint firstItem="g5c-YQ-ic9" firstAttribute="top" secondItem="Y2H-Tz-REP" secondAttribute="bottom" constant="18" id="Ips-Rx-U2a"/>
+                            <constraint firstAttribute="trailing" secondItem="iDN-a9-aN7" secondAttribute="trailing" constant="20" id="Jka-Ci-KkQ"/>
+                            <constraint firstItem="2sd-a5-Ryj" firstAttribute="leading" secondItem="agp-b1-XGV" secondAttribute="leadingMargin" constant="160" id="MV2-2q-Njy"/>
+                            <constraint firstItem="Ow3-Ox-TpQ" firstAttribute="leading" secondItem="agp-b1-XGV" secondAttribute="leading" constant="180" id="MsB-Iv-P0q"/>
+                            <constraint firstItem="iDN-a9-aN7" firstAttribute="top" secondItem="g5c-YQ-ic9" secondAttribute="bottom" constant="35" id="c9y-gZ-qIA"/>
+                            <constraint firstAttribute="trailing" secondItem="HpV-3t-Gpc" secondAttribute="trailing" constant="180" id="cBW-GU-3zp"/>
+                            <constraint firstItem="Ow3-Ox-TpQ" firstAttribute="top" secondItem="iDN-a9-aN7" secondAttribute="bottom" constant="8" id="h7F-Dd-Ok9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g5c-YQ-ic9" secondAttribute="trailing" constant="160" id="iH7-i0-gIe"/>
+                            <constraint firstItem="HpV-3t-Gpc" firstAttribute="leading" secondItem="agp-b1-XGV" secondAttribute="leading" constant="180" id="kBh-Ih-jqb"/>
+                            <constraint firstItem="g5c-YQ-ic9" firstAttribute="leading" secondItem="agp-b1-XGV" secondAttribute="leadingMargin" constant="160" id="lU7-is-DJP"/>
+                            <constraint firstItem="iDN-a9-aN7" firstAttribute="leading" secondItem="agp-b1-XGV" secondAttribute="leading" constant="20" id="nXz-eW-GtN"/>
+                            <constraint firstItem="HpV-3t-Gpc" firstAttribute="top" secondItem="2sd-a5-Ryj" secondAttribute="bottom" constant="8" id="x8d-9h-2X4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diU-gA-kA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1160" y="960"/>
+            <point key="canvasLocation" x="944" y="64"/>
         </scene>
         <!--View Controller4 LongLT-->
         <scene sceneID="uDI-a0-bQP">
@@ -71,8 +150,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-7i-BwR" userLabel="excludeView">
-                                <rect key="frame" x="100" y="22" width="400" height="576"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-7i-BwR" userLabel="excludeView">
+                                <rect key="frame" x="100" y="20" width="400" height="576"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="momo_icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z4C-dQ-OJz">
                                         <rect key="frame" x="170" y="10" width="60" height="60"/>
@@ -220,6 +299,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logo momo 2.jpg" width="142" height="141"/>
         <image name="momo_icon.jpg" width="512" height="512"/>
     </resources>
 </document>
