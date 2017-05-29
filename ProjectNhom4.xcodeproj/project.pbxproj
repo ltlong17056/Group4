@@ -21,7 +21,7 @@
 		8AA4B1091ED8294200ABB186 /* ViewController_6_SinhTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4B1081ED8294200ABB186 /* ViewController_6_SinhTT.swift */; };
 		8AA4B10B1ED8295700ABB186 /* ViewController_7_HuyNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4B10A1ED8295700ABB186 /* ViewController_7_HuyNT.swift */; };
 		8AA4B10D1ED8296500ABB186 /* ViewController_8_LongLT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4B10C1ED8296500ABB186 /* ViewController_8_LongLT.swift */; };
-		8AA4B1101ED82F9E00ABB186 /* momo_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AA4B10F1ED82F9E00ABB186 /* momo_icon.jpg */; };
+		8ADE3C0C1EDC118C00E30733 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ADE3C0B1EDC118C00E30733 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 		8AA4B1081ED8294200ABB186 /* ViewController_6_SinhTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_6_SinhTT.swift; sourceTree = "<group>"; };
 		8AA4B10A1ED8295700ABB186 /* ViewController_7_HuyNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_7_HuyNT.swift; sourceTree = "<group>"; };
 		8AA4B10C1ED8296500ABB186 /* ViewController_8_LongLT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_8_LongLT.swift; sourceTree = "<group>"; };
-		8AA4B10F1ED82F9E00ABB186 /* momo_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = momo_icon.jpg; path = ../../Downloads/momo_icon.jpg; sourceTree = "<group>"; };
+		8ADE3C0B1EDC118C00E30733 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../Downloads/icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,7 @@
 		8AA4B10E1ED82EF900ABB186 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				8AA4B10F1ED82F9E00ABB186 /* momo_icon.jpg */,
+				8ADE3C0B1EDC118C00E30733 /* icon.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AA4B1101ED82F9E00ABB186 /* momo_icon.jpg in Resources */,
+				8ADE3C0C1EDC118C00E30733 /* icon.png in Resources */,
 				8AA4B0DB1ED827B200ABB186 /* LaunchScreen.storyboard in Resources */,
 				8AA4B0D81ED827B200ABB186 /* Assets.xcassets in Resources */,
 				8AA4B0D61ED827B200ABB186 /* Main.storyboard in Resources */,

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -34,12 +35,83 @@
                     <view key="view" contentMode="scaleToFill" id="cQy-pY-OnO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="lY2-KO-VgQ">
+                                <rect key="frame" x="220" y="20" width="160" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hjj-OD-xDS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Một tin nhắc chứa mã xác thực đã được gửi đến 090" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwR-dT-Rsg">
+                                <rect key="frame" x="110" y="150" width="380" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-9c-fb6">
+                                <rect key="frame" x="200" y="301" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.0" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tdf-i5-bxv"/>
+                                </constraints>
+                                <state key="normal" title="Tiếp tục">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập mã xác thực" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xo3-jX-8RR">
+                                <rect key="frame" x="200" y="231" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lj0-mD-Jky"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDp-VW-xNB">
+                                <rect key="frame" x="220" y="412" width="43" height="30"/>
+                                <state key="normal" title="Giữ lại">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn không nhận được mã xác thực" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEH-zp-sK1">
+                                <rect key="frame" x="150" y="361" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdL-qC-e3H">
+                                <rect key="frame" x="325" y="412" width="55" height="30"/>
+                                <state key="normal" title="Đổi SET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61960784313725492" green="0.0" blue="0.35294117647058826" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qwR-dT-Rsg" firstAttribute="top" secondItem="lY2-KO-VgQ" secondAttribute="bottom" constant="30" id="898-89-wDx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qwR-dT-Rsg" secondAttribute="trailing" constant="90" id="8kA-tb-NZz"/>
+                            <constraint firstItem="dDp-VW-xNB" firstAttribute="leading" secondItem="cQy-pY-OnO" secondAttribute="leadingMargin" constant="200" id="C4W-La-LzF"/>
+                            <constraint firstItem="xo3-jX-8RR" firstAttribute="leading" secondItem="cQy-pY-OnO" secondAttribute="leading" constant="200" id="L6D-Gp-mlb"/>
+                            <constraint firstAttribute="trailing" secondItem="qlS-9c-fb6" secondAttribute="trailing" constant="200" id="Ler-xe-feH"/>
+                            <constraint firstItem="gEH-zp-sK1" firstAttribute="top" secondItem="qlS-9c-fb6" secondAttribute="bottom" constant="20" id="R67-aT-5NT"/>
+                            <constraint firstItem="gEH-zp-sK1" firstAttribute="leading" secondItem="cQy-pY-OnO" secondAttribute="leading" constant="150" id="aiq-LW-Wif"/>
+                            <constraint firstItem="xo3-jX-8RR" firstAttribute="top" secondItem="qwR-dT-Rsg" secondAttribute="bottom" constant="40" id="b7b-Zb-qcy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lY2-KO-VgQ" secondAttribute="trailing" constant="200" id="dDO-p9-7rA"/>
+                            <constraint firstAttribute="trailing" secondItem="gEH-zp-sK1" secondAttribute="trailing" constant="150" id="dUF-kn-zqe"/>
+                            <constraint firstItem="qwR-dT-Rsg" firstAttribute="leading" secondItem="cQy-pY-OnO" secondAttribute="leadingMargin" constant="90" id="f6v-yG-YMf"/>
+                            <constraint firstItem="fdL-qC-e3H" firstAttribute="top" secondItem="gEH-zp-sK1" secondAttribute="bottom" constant="30" id="fh1-rx-oKb"/>
+                            <constraint firstItem="lY2-KO-VgQ" firstAttribute="top" secondItem="3e9-DZ-uKz" secondAttribute="bottom" id="ig0-6E-Oo0"/>
+                            <constraint firstItem="dDp-VW-xNB" firstAttribute="top" secondItem="gEH-zp-sK1" secondAttribute="bottom" constant="30" id="kih-Qm-FUC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fdL-qC-e3H" secondAttribute="trailing" constant="200" id="oAH-kN-oCj"/>
+                            <constraint firstItem="qlS-9c-fb6" firstAttribute="top" secondItem="xo3-jX-8RR" secondAttribute="bottom" constant="30" id="oMe-DQ-21q"/>
+                            <constraint firstItem="lY2-KO-VgQ" firstAttribute="leading" secondItem="cQy-pY-OnO" secondAttribute="leadingMargin" constant="200" id="oXd-Vr-YxT"/>
+                            <constraint firstItem="qlS-9c-fb6" firstAttribute="leading" secondItem="cQy-pY-OnO" secondAttribute="leading" constant="200" id="qpR-NK-iNe"/>
+                            <constraint firstAttribute="trailing" secondItem="xo3-jX-8RR" secondAttribute="trailing" constant="200" id="wgZ-i6-fNy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKU-0k-QbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="359" y="796"/>
+            <point key="canvasLocation" x="197" y="397"/>
         </scene>
         <!--View Controller3 HuyNT-->
         <scene sceneID="NL5-lx-d7r">
@@ -220,6 +292,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon.png" width="1024" height="1024"/>
         <image name="momo_icon.jpg" width="512" height="512"/>
     </resources>
 </document>
