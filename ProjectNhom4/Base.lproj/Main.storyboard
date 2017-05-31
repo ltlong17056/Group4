@@ -54,16 +54,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo momo 2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-YQ-ic9">
-                                <rect key="frame" x="180" y="38" width="240" height="141"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thiet lap mat khau de bao ve tai khoan MoMo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDN-a9-aN7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thiet lap mat khau de bao ve tai khoan MoMo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDN-a9-aN7">
                                 <rect key="frame" x="20" y="214" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ow3-Ox-TpQ" customClass="CustomTextField" customModule="ProjectNhom4" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ow3-Ox-TpQ" customClass="CustomTextField" customModule="ProjectNhom4" customModuleProvider="target">
                                 <rect key="frame" x="180" y="243" width="240" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -79,7 +76,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sd-a5-Ryj" customClass="CustomTextField" customModule="ProjectNhom4" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sd-a5-Ryj" customClass="CustomTextField" customModule="ProjectNhom4" customModuleProvider="target">
                                 <rect key="frame" x="180" y="281" width="240" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -95,7 +92,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpV-3t-Gpc" customClass="CustomButton" customModule="ProjectNhom4" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpV-3t-Gpc" customClass="CustomButton" customModule="ProjectNhom4" customModuleProvider="target">
                                 <rect key="frame" x="180" y="319" width="240" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Xac nhan">
@@ -113,6 +110,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo momo 2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-YQ-ic9">
+                                <rect key="frame" x="180" y="38" width="240" height="141"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.62352941176470589" green="0.0039215686274509803" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -299,7 +299,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo momo 2.jpg" width="142" height="141"/>
+        <image name="logo momo 2.jpg" width="512" height="512"/>
         <image name="momo_icon.jpg" width="512" height="512"/>
     </resources>
 </document>
