@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QH1-89-hlz">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKU-0k-QbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="359" y="796"/>
+            <point key="canvasLocation" x="222" y="348"/>
         </scene>
         <!--View Controller3 HuyNT-->
         <scene sceneID="NL5-lx-d7r">
@@ -72,36 +72,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vN-7i-BwR" userLabel="excludeView">
-                                <rect key="frame" x="100" y="22" width="400" height="576"/>
+                                <rect key="frame" x="60" y="22" width="480" height="576"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="momo_icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z4C-dQ-OJz">
-                                        <rect key="frame" x="170" y="10" width="60" height="60"/>
+                                        <rect key="frame" x="210" y="10" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="D7B-EG-2j5"/>
                                             <constraint firstAttribute="height" constant="60" id="rz1-Da-aFT"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhap mat khau" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-WX-Rx1" userLabel="edt_pass_1">
-                                        <rect key="frame" x="80" y="144" width="240" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="tp3-Zo-Cv8"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thiet lap mat khau de bao ve tai khoan vi momo cua ban" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hC-eM-M0Z" userLabel="lbl_1">
-                                        <rect key="frame" x="40" y="90" width="320" height="34"/>
+                                        <rect key="frame" x="40" y="90" width="400" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhap lai mat khau" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmz-EM-eZU" userLabel="edt_pass_2">
-                                        <rect key="frame" x="80" y="194" width="240" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cv-hc-hwh">
-                                        <rect key="frame" x="114" y="244" width="172" height="30"/>
+                                        <rect key="frame" x="137" y="227" width="206" height="30"/>
                                         <color key="backgroundColor" red="0.63677069481382986" green="0.098753610486853424" blue="0.54010857190968542" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Q7P-dH-ATb"/>
@@ -111,6 +98,19 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhap mat khau" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-WX-Rx1" userLabel="edt_pass_1">
+                                        <rect key="frame" x="48" y="127" width="384" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="tp3-Zo-Cv8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhap lai mat khau" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmz-EM-eZU" userLabel="edt_pass_2">
+                                        <rect key="frame" x="48" y="177" width="384" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -123,11 +123,11 @@
                                     <constraint firstItem="5hC-eM-M0Z" firstAttribute="leading" secondItem="8vN-7i-BwR" secondAttribute="leading" constant="40" id="OIc-oE-wEu"/>
                                     <constraint firstItem="jmz-EM-eZU" firstAttribute="top" secondItem="lwG-WX-Rx1" secondAttribute="bottom" constant="10" id="Syf-yj-oZv"/>
                                     <constraint firstItem="5hC-eM-M0Z" firstAttribute="centerX" secondItem="8vN-7i-BwR" secondAttribute="centerX" id="VB8-ah-mD4"/>
+                                    <constraint firstItem="jmz-EM-eZU" firstAttribute="width" secondItem="8vN-7i-BwR" secondAttribute="width" multiplier="4/5" id="Wej-WQ-xfj"/>
                                     <constraint firstItem="z4C-dQ-OJz" firstAttribute="top" secondItem="8vN-7i-BwR" secondAttribute="top" constant="10" id="XKd-Y0-2Nj"/>
-                                    <constraint firstItem="jmz-EM-eZU" firstAttribute="width" secondItem="lwG-WX-Rx1" secondAttribute="width" id="ev4-zt-mom"/>
                                     <constraint firstItem="z4C-dQ-OJz" firstAttribute="centerX" secondItem="8vN-7i-BwR" secondAttribute="centerX" id="h4k-lT-5ZU"/>
                                     <constraint firstItem="8Cv-hc-hwh" firstAttribute="width" secondItem="8vN-7i-BwR" secondAttribute="width" multiplier="3/7" id="nJ8-wI-HgP"/>
-                                    <constraint firstItem="lwG-WX-Rx1" firstAttribute="width" secondItem="8vN-7i-BwR" secondAttribute="width" multiplier="3/5" id="wJg-f8-Y7L"/>
+                                    <constraint firstItem="lwG-WX-Rx1" firstAttribute="width" secondItem="8vN-7i-BwR" secondAttribute="width" multiplier="4/5" id="wJg-f8-Y7L"/>
                                     <constraint firstItem="8Cv-hc-hwh" firstAttribute="top" secondItem="jmz-EM-eZU" secondAttribute="bottom" constant="10" id="web-s2-eZp"/>
                                     <constraint firstItem="8Cv-hc-hwh" firstAttribute="centerX" secondItem="8vN-7i-BwR" secondAttribute="centerX" id="yjN-dV-ezX"/>
                                 </constraints>
@@ -138,13 +138,13 @@
                             <constraint firstItem="8vN-7i-BwR" firstAttribute="centerX" secondItem="FAy-Lu-odn" secondAttribute="centerX" id="6qo-Fo-LjK"/>
                             <constraint firstItem="8vN-7i-BwR" firstAttribute="top" secondItem="KMr-cm-jRl" secondAttribute="bottom" constant="2" id="GSp-M3-nY3"/>
                             <constraint firstItem="kZt-aS-84y" firstAttribute="top" secondItem="8vN-7i-BwR" secondAttribute="bottom" constant="2" id="hhM-wO-Oa3"/>
-                            <constraint firstItem="8vN-7i-BwR" firstAttribute="width" secondItem="FAy-Lu-odn" secondAttribute="width" multiplier="2/3" id="pko-KH-BOA"/>
+                            <constraint firstItem="8vN-7i-BwR" firstAttribute="width" secondItem="FAy-Lu-odn" secondAttribute="width" multiplier="4/5" id="pko-KH-BOA"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d53-hx-Vx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="1106"/>
+            <point key="canvasLocation" x="117" y="890"/>
         </scene>
         <!--View Controller5 TrungPT-->
         <scene sceneID="zHc-kp-crA">
@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVd-C3-9VT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195" y="1476"/>
+            <point key="canvasLocation" x="1185" y="1184"/>
         </scene>
         <!--View Controller7 HuyNT-->
         <scene sceneID="kgl-Ec-9F0">
