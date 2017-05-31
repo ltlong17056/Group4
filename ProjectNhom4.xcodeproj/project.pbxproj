@@ -22,7 +22,6 @@
 		8AA4B1091ED8294200ABB186 /* ViewController_6_SinhTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4B1081ED8294200ABB186 /* ViewController_6_SinhTT.swift */; };
 		8AA4B10B1ED8295700ABB186 /* ViewController_7_HuyNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4B10A1ED8295700ABB186 /* ViewController_7_HuyNT.swift */; };
 		8AA4B10D1ED8296500ABB186 /* ViewController_8_LongLT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4B10C1ED8296500ABB186 /* ViewController_8_LongLT.swift */; };
-		8AA4B1101ED82F9E00ABB186 /* momo_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AA4B10F1ED82F9E00ABB186 /* momo_icon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		8AA4B1081ED8294200ABB186 /* ViewController_6_SinhTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_6_SinhTT.swift; sourceTree = "<group>"; };
 		8AA4B10A1ED8295700ABB186 /* ViewController_7_HuyNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_7_HuyNT.swift; sourceTree = "<group>"; };
 		8AA4B10C1ED8296500ABB186 /* ViewController_8_LongLT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_8_LongLT.swift; sourceTree = "<group>"; };
-		8AA4B10F1ED82F9E00ABB186 /* momo_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = momo_icon.jpg; path = ../../Downloads/momo_icon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +161,9 @@
 		8AA4B10E1ED82EF900ABB186 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				8AA4B10F1ED82F9E00ABB186 /* momo_icon.jpg */,
+				8A8C936F1EDC12A700715AD1 /* logo momo 2.jpg */,
+				8A8C93711EDC178C00715AD1 /* CustomTextField.swift */,
+				8A8C93731EDC180800715AD1 /* CustomButton.swift */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AA4B1101ED82F9E00ABB186 /* momo_icon.jpg in Resources */,
+				8A8C93701EDC12A700715AD1 /* logo momo 2.jpg in Resources */,
 				8AA4B0DB1ED827B200ABB186 /* LaunchScreen.storyboard in Resources */,
 				8AA4B0D81ED827B200ABB186 /* Assets.xcassets in Resources */,
 				8A812D7E1ED82CFD001017B8 /* h1.png in Resources */,
@@ -305,8 +305,10 @@
 				8AA4B1051ED8292200ABB186 /* ViewController_4_LongLT.swift in Sources */,
 				8AA4B10D1ED8296500ABB186 /* ViewController_8_LongLT.swift in Sources */,
 				8AA4B1011ED8290500ABB186 /* ViewController_2_SinhTT.swift in Sources */,
+				8A8C93721EDC178C00715AD1 /* CustomTextField.swift in Sources */,
 				8AA4B1031ED8291200ABB186 /* ViewController_3_HuyNT.swift in Sources */,
 				8AA4B1091ED8294200ABB186 /* ViewController_6_SinhTT.swift in Sources */,
+				8A8C93741EDC180800715AD1 /* CustomButton.swift in Sources */,
 				8AA4B10B1ED8295700ABB186 /* ViewController_7_HuyNT.swift in Sources */,
 				8AA4B0FF1ED828F500ABB186 /* ViewController_1_TrungPT.swift in Sources */,
 				8AA4B0D11ED827B200ABB186 /* AppDelegate.swift in Sources */,
