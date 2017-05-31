@@ -161,7 +161,7 @@
 		8AA4B10E1ED82EF900ABB186 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				8A8C936F1EDC12A700715AD1 /* logo momo 2.jpg */,
+				8A9B85201EDEB55D00239E2F /* logo momo 2.jpg */,
 				8A8C93711EDC178C00715AD1 /* CustomTextField.swift */,
 				8A8C93731EDC180800715AD1 /* CustomButton.swift */,
 			);
@@ -272,8 +272,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8C93701EDC12A700715AD1 /* logo momo 2.jpg in Resources */,
 				8AA4B0DB1ED827B200ABB186 /* LaunchScreen.storyboard in Resources */,
+				8A9B85211EDEB55D00239E2F /* logo momo 2.jpg in Resources */,
 				8AA4B0D81ED827B200ABB186 /* Assets.xcassets in Resources */,
 				8A812D7E1ED82CFD001017B8 /* h1.png in Resources */,
 				8AA4B0D61ED827B200ABB186 /* Main.storyboard in Resources */,
